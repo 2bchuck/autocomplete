@@ -73,16 +73,17 @@ restaurantsSearchApp.directive("restaurantSearch", function() {
          * Activate selected list node.
          */
         function activate() {
-            if (pointer > -1)
-                $scope.activate(pointer);
+            $scope.activate(pointer);
         }
 
         /**
          * Fill the input field with selected item's name.
          */
         function selectItem() {
-            $scope.selectSuggestion($scope.suggested[pointer]);
-            $scope.reinit();
+            if (pointer > -1) {
+                $scope.selectSuggestion($scope.suggested[pointer]);
+                $scope.reinit();
+            }
         }
     };
 
