@@ -24,8 +24,8 @@
             <input class="searchinput" ng-model="query" placeholder="Search for restaurants" autofocus>
             <input type="submit" class="submit" value="search">
         </div>
-        <ul class="restaurantlist">
-            <li class="restaurant cf" ng-repeat="item in restaurants | filter: query">
+        <ul class="restaurantlist" ng-show="query">
+            <li class="restaurant cf" ng-repeat="item in restaurants | filter: query | orderBy: restaurantOrder">
                 <div class="info">
                     <h2>{{item.name}}</h2>
                     <h3>{{item.local}}</h3>
