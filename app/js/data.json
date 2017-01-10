@@ -1,0 +1,38 @@
+[
+    {
+        "name":"Freischwimmer",
+        "local":"Kreuzberg"
+    },
+    {
+        "name":"Brauhaus in Rixdorf",
+        "local":"Neukölln"
+    },
+    {
+        "name":"Bar Raval",
+        "local":"Kreuzberg"
+    },
+    {
+        "name":"EBERT Restaurant & Bar",
+        "local":"Wilmersdorf"
+    },
+    {
+        "name":"Cafe Mori",
+        "local":"Kreuzberg"
+    },
+    {
+        "name":"Sudaka",
+        "local":"Schöneberg"
+    },
+    {
+        "name":"Yumcha Heroes",
+        "local":"Mitte"
+    },
+    {
+        "name":"Spreegold Rosa-Luxemburg-Straße",
+        "local":"Mitte"
+    },
+    {
+        "name":"Spregold Stargarder Straße",
+        "local":"Prenzlauer Berg"
+    }
+]
