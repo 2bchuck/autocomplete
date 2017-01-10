@@ -2,6 +2,7 @@ restaurantsSearchApp.controller('RestaurantController', ['$scope', 'api', functi
     api.getRestaurants().success(function(data) {
         $scope.restaurants = data;
         $scope.restaurantOrder = 'name';
+        $scope.suggestion = true;
     });
 }]);
 

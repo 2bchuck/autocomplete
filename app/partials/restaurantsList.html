@@ -1,6 +1,6 @@
 <ul class="restaurantlist" ng-show="query">
-    <li class="restaurant cf" ng-repeat="item in restaurants | filter: query | orderBy: restaurantOrder">
-        <div class="info">
+    <li class="restaurant cf" ng-show="suggestion" ng-repeat="item in restaurants | filter: query | orderBy: restaurantOrder">
+        <div class="info" ng-click="selectSuggestion(item)">
             <h2>{{item.name}}</h2>
             <h3>{{item.local}}</h3>
         </div>
