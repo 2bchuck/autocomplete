@@ -21,11 +21,11 @@
         <div class="search">
             <h1>Restaurants mit W-Lan in Berlin</h1>
             <label>search: </label>
-            <input class="searchinput" placeholder="Search for restaurants" autofocus>
+            <input class="searchinput" ng-model="query" placeholder="Search for restaurants" autofocus>
             <input type="submit" class="submit" value="search">
         </div>
         <ul class="restaurantlist">
-            <li class="restaurant cf" ng-repeat="item in restaurants">
+            <li class="restaurant cf" ng-repeat="item in restaurants | filter: query">
                 <div class="info">
                     <h2>{{item.name}}</h2>
                     <h3>{{item.local}}</h3>
