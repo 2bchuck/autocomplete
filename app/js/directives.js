@@ -1,4 +1,15 @@
 /**
+ * Directive for autocomplete component.
+ */
+restaurantsSearchApp.directive("autocompleteSearch", function() {
+    return {
+        restrict: "E",
+        replace: true,
+        templateUrl: "./partials/autocompleteSearch.html"
+    };
+});
+
+/**
  * Directive for search panel element.
  */
 restaurantsSearchApp.directive("restaurantSearch", function() {
