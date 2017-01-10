@@ -73,7 +73,8 @@ restaurantsSearchApp.directive("restaurantSearch", function() {
          * Activate selected list node.
          */
         function activate() {
-            $scope.activate(pointer);
+            if (pointer > -1)
+                $scope.activate(pointer);
         }
 
         /**
