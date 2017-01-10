@@ -1,3 +1,6 @@
+/**
+ * Service to get restaurants data.
+ */
 angular.module('restaurants-service', [])
     .factory('api', ['$http', function ($http) {
         var restaurantsAPI = {};

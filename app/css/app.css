@@ -197,7 +197,7 @@ h3{
     text-decoration: none;
 }
 
-.restaurantlist li:hover {
+.restaurantlist li:hover, .restaurantlist li.focus {
     background: #FDF6E3;
 }
 
