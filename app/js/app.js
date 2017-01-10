@@ -1,14 +1,5 @@
-'use strict';
+var restaurantSearchApp = angular.module('restaurantSearchApp', []);
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+restaurantSearchApp.controller('RestaurantController', ['$scope', '$http', function($scope, $http) {
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
