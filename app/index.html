@@ -25,63 +25,15 @@
             <input type="submit" class="submit" value="search">
         </div>
         <ul class="restaurantlist">
-            <li class="restaurant cf">
+            <li class="restaurant cf" ng-repeat="item in restaurants">
                 <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
-                </div>
-            </li>
-            <li class="restaurant cf">
-                <div class="info">
-                    <h2>Freischwimmer</h2>
-                    <h3>Kreuzberg</h3>
+                    <h2>{{item.name}}</h2>
+                    <h3>{{item.local}}</h3>
                 </div>
             </li>
         </ul>
     </div>
-    
+
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="js/app.js"></script>

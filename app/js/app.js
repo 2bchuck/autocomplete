@@ -1,5 +1,7 @@
-var restaurantSearchApp = angular.module('restaurantSearchApp', []);
+var restaurantsSearchApp = angular.module('restaurantsSearchApp', []);
 
-restaurantSearchApp.controller('RestaurantController', ['$scope', '$http', function($scope, $http) {
-
+restaurantsSearchApp.controller('RestaurantController', ['$scope', '$http', function($scope, $http) {
+    $http.get('js/data.json').success(function(data) {
+        $scope.restaurants = data;
+    });
 }]);
